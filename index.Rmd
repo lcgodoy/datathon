@@ -13,6 +13,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      seal: false
 ---
 
 ```{r setup, include=FALSE}
@@ -201,7 +202,7 @@ count: false
   pacote específico. Contudo, recomenda-se utilização
   do pacote `jsonlite`
   
-  - (https://rtweet.info/)[`rtweet`]
+  - `rtweet` 
   
   ### Quando utilizar
   
@@ -232,10 +233,21 @@ class: bg-main1 split-30 hide-slide-number
 
 .column.bg-main4[
 ]
-.column.slide-in-left[
+.column.slide-in-right[
 .sliderbox.bg-main3.vmiddle[
 .font5[Exemplos]
 ]]
+
+---
+
+class: bg-main1 split-30 hide-slide-number center middle
+
+`r icon::fa_globe(size = 3)`
+# Web Scrapping
+
+---
+
+
 
 ---
 

@@ -1,0 +1,7 @@
+remDr <- remoteDriver(
+  remoteServerAddr = "localhost",
+  port = 3040L,
+  browserName = "chrome"
+)
+
+remDr$open()

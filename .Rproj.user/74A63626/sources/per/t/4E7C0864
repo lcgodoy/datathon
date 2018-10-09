@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539045716196.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1812189922",
+    "id" : "4E7C0864",
+    "lastKnownWriteTime" : 1539052214,
+    "last_content_update" : 1539052214766,
+    "path" : "~/Documents/github/datathon/scripts/02-rvest_example.R",
+    "project_path" : "scripts/02-rvest_example.R",
+    "properties" : {
+        "cursorPosition" : "27,27",
+        "scrollLine" : "4",
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
