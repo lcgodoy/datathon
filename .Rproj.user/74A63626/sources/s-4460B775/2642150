@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539040473463.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2097517518",
+    "id" : "2642150",
+    "lastKnownWriteTime" : 1539526145,
+    "last_content_update" : 1539526145136,
+    "path" : "~/Documents/github/datathon/scripts/01-RSelenium_example.R",
+    "project_path" : "scripts/01-RSelenium_example.R",
+    "properties" : {
+        "cursorPosition" : "25,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1538950222728.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "254|39|278|0|\n",
+    "hash" : "0",
+    "id" : "57AF723B",
+    "lastKnownWriteTime" : 1539527065,
+    "last_content_update" : 1539527065890,
+    "path" : "~/Documents/github/datathon/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "326,72",
+        "scrollLine" : "298",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
