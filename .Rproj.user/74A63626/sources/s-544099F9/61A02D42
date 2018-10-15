@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539577350697.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "929619259",
+    "id" : "61A02D42",
+    "lastKnownWriteTime" : 1539613436,
+    "last_content_update" : 1539613436558,
+    "path" : "~/Documents/github/datathon/scripts/05-google.R",
+    "project_path" : "scripts/05-google.R",
+    "properties" : {
+        "cursorPosition" : "30,42",
+        "scrollLine" : "22",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

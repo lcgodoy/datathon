@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539569107897.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4E8D284C",
+    "lastKnownWriteTime" : 1539577319,
+    "last_content_update" : 1539577319472,
+    "path" : "~/Documents/github/datathon/scripts/04-tweets.R",
+    "project_path" : "scripts/04-tweets.R",
+    "properties" : {
+        "cursorPosition" : "22,102",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

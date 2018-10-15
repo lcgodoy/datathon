@@ -1,0 +1,85 @@
+#---- Georreferenciamento ----
+
+library(dplyr)
+library(mapsBR)
+# library(sf)
+# library(ggplot2)
+library(magrittr)
+# library(googleway)
+
+dados <- readRDS('data/dados_nini.rds')
+
+dados$possui_logradouro <- ifelse(dados$nm_logrado != "", TRUE, FALSE)
+
+dados <- dados %>% 
+  filter(possui_logradouro == TRUE) %>% 
+  select(-possui_logradouro)
+
+#---- verificando casos nao georreferenciados ----
+
+load('data/coord_df.RData')
+
+dados$georref <- dados$nu_notific %in% coord_df$ID
+
+# apenas IDs nao georreferenciados
+
+dados %<>%
+  filter(georref == FALSE)
+
+endereco <- paste(dados$nm_logrado,
+                  dados$nu_numero,
+                  dados$bairro_res,
+                  dados$nome_mun,
+                  "RS",
+                  "Brasil",
+                  sep = ",")
+
+endereco <- tolower(endereco)
+
+endereco <- stringr::str_replace_all(endereco, pattern = ' ', replacement = '+')
+
+google_key <- "AIzaSyDJYs44-vEUhb_8BpUGcIiC0A8hpKixNhY"
+
+language <- 'pt-br'
+region <- 'BR'
+
+maps_url <- "https://maps.googleapis.com/maps/api/geocode/json?"
+
+dados$long <- NA
+dados$lat <- NA
+dados$formatted_addres_google <- NA
+
+for(i in seq_along(dados$nu_notific)) {
+  urlArgs <- c("address" = endereco[i],
+               "language" = language,
+               "region" = region,
+               "key" = google_key)
+  
+  web_url <- utils::URLencode(paste0(maps_url, paste0("&", paste0(names(urlArgs)), 
+                                                      "=", paste0(urlArgs), collapse = "")))
+  
+  place_request <- jsonlite::fromJSON(web_url)
+  
+  # para verificar se ta dentro do municipio
+  # stringr::str_detect(tolower(place_request$results$formatted_address), tolower(dados$nome_mun[235]))
+  
+  if(place_request$status == 'OK') {
+    dados$lat[i] <- place_request$results$geometry$location[1, 'lat']
+    dados$long[i] <- place_request$results$geometry$location[1, 'lng']
+    dados$formatted_addres_google[i] <- place_request$results$formatted_address[1]
+  }
+  rm('urlArgs', 'web_url', 'place_request')
+  Sys.sleep(0.01)
+}
+
+dados %>% 
+  select(nu_notific, formatted_addres_google, long, lat) %>% 
+  rename('ID' = 'nu_notific', 
+         'endereco' = 'formatted_addres_google') %>% 
+  bind_rows(coord_df) -> coord_df
+
+coord_df %<>%
+  filter(!is.na(lat)) %>% 
+  filter(stringr::str_detect(endereco, 'RS'))
+
+save(coord_df, file = 'data/coord_df_novo.RData')

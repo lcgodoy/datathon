@@ -1,0 +1,90 @@
+---
+title: "CV"
+author: "Lucas Godoy"
+output: html_document
+---
+
+## Contact Information
+
+- Email: lucasdac.godoy@gmail.com 
+- Twitter: [godoy_lusca](https://twitter.com/godoy_lusca)
+
+## Location
+
+```{r, echo = F,fig.width=12}
+library(leaflet)
+
+icons <- awesomeIcons(
+  icon = "fa-code",
+  library = "fa",
+  markerColor = "red",
+  spin = T
+)
+
+location <- paste(sep = "<br/>",
+                  "<b><a href='http://www.est.ufmg.br/portal/pos-graduacao/english-version'>Graduate Program in Statistics - UFMG</a></b>",
+                  "Av. Antonio Carlos, 6627 - Prédio do ICEx - Campus Pampulha ",
+                  "Belo Horizonte, MG - Brasil"
+)
+
+leaflet() %>%
+  addAwesomeMarkers(lng = -43.96638, lat = -19.86909, 
+                    icon = icons, popup = location, label = "I work here!") %>% 
+  addProviderTiles(providers$CartoDB.Positron)
+```
+
+## Research Interest
+
+- Monte Carlo Methods
+- Spatial statistics
+- Statistical computing
+- Machine learning
+- Data Visualization
+- Open Data Analysis
+
+## Programming
+
+- **R**: Advanced;
+- **Cpp**: Intermediate;
+- **SQL**: Intermediate;
+- **HTML, CSS, js**: Beginner;
+- **Python**: Beginner.
+
+## Education Background
+
+- 2011 ~ 2016, Bachelor of Statistics, Instituto de Matematica e Estatística, Universidade Federal do Rio Grande do Sul;
+- 2017 (in progress), Master of Statistics, Institudo de Ciências Exatas, Universidade Federal de Minas Gerais.
+
+## Professional Experience
+
+The first time when I heard something about statistics was when I was working as _Agente Censitário Supervisor_ at
+[IBGE](ibge.gov.br) in the 2010 Census. My boss was a statistician and he introduced me to the profession.
+I enjoyed the idea of “ playing in everyone’s backyard. ” (Tukey). I quit my job and started my undergraduate 
+degree in statistics at the [Universidade Federal do 
+Rio Grande do Sul - UFRGS](ufrgs.br), one of the best universities in my country.   
+Soon after I got involved in a research project at the Department of Social Medicine called [Saúde Urbana](http://www.ufrgs.br/saudeurbana)
+as a recipient of a Scientific Initiation Scholarship. This work put in contact with spatial statistics
+in an applied setting. In my last two years as undegraduate student, I worked at [NAE](http://www.mat.ufrgs.br/~nae/) 
+with statistical consulting in academic projects and at
+[AMBES](http://portais4.ufes.br/prppg/ext/projetos.php?prog=30001013031P8&cdproj=3890), an environmental 
+characterization of the Espírito Santos Basin, a project financially supported by the state 
+owned petroleum company Petrobras, with geostatistical models to invesigate physical and 
+chemical properties of water near to oil platforms.   
+After completing my degree, I worked on an information technology company, called [CONECTT](https://conectt.com.br/), 
+with analysis of web data and predictive modeling. It was an enriching experience where I improved my team work and
+programming skills. This work showed that I needed, and wanted, more knowledge. I applied for a Master Degree in 
+Statistics at the Universidade Federal de Minas Gerais - UFMG, one the best graduate programs in Brazil. Upon acceptance, 
+I started in March 2017. I have been carrying out research under the supervision of Dr. Renato Assuncção. We are 
+developing a Monte Carlo test to test if two sets of polygons have some kind of spatial association. This work was
+motivated by a request from researchers at [ESRI](https://www.esri.com/en-us/home), the ArcGIS company.  
+I also participate as a coordinator of a research group of graduate students at UFMG called 
+[Stats4Good](stats4good.github.io), where the main goal is using statistics to contribute for a better society. 
+This group has two projects, one that is called [GESEM](stats4good.github.io/gesem) about under reporting of rape 
+in Brazil, and another one called [Veraz](stats4good.github.io/veraz) about the public sector expenses in the same country.
+I am part of the second one, and we have a lot of visualizations and insights about the data. Currently we are working 
+on a Shiny App to show the population how the governors are using the money collected from taxes. There are another 
+project that I participated where I and three colleagues won an challenge called 1st CEPESP Data Challenge: Deciphering
+Brazil Elections. The main goal of this challenge was to find solutions for visualization, search engines,
+graphic arts and any other tools that facilitate the understanding of the electoral process
+in Brazil, always with free and open source software, our app can be accessed throud this
+[link](github.com/voronoys/voronoys-app).
