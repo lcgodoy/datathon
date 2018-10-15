@@ -260,6 +260,39 @@ class: bg-main1 split-30 hide-slide-number center middle
 
 ---
 
+class: bg-main1 middle
+
+.center[
+## HTML
+### *Hipertext Markup Language*
+]
+
+* Linguagem para estruturar conteúdos para navegadores da web;
+* Armazenada em arquivos de texto com o sufixo _html_.
+
+---
+
+class: bg-main1 middle
+
+## Elementos Comuns
+
+* **html** 
+    - Todo conteúdo da página faz parte deste elemento;
+* **head** 
+    - Contém os metadados do documento (Título, Scripts, etc);
+* **title** 
+    - Título do documento (mostrado acima da página e quando é marcada como favorito);
+* **body** 
+    - Tudo que não está no head deve ser incluído no body, se trata do conteúdo visível primário;
+* **h1, h2, h3, h4** 
+    - Títulos em diferentes níveis para a página;
+* **p** 
+    - *Um parágrafo*;
+* **ul, ol, li** 
+    - lista não ordenada, lista ordenada e especificação de elementos da lista, respectivamente;
+
+---
+
 class: bg-main1
 
 ## Utilizando o pacote `RSelenium`
@@ -321,8 +354,8 @@ class: bg-main1 split-two
 ### `RSelenium`
 
 .center[
-<div id="htmlwidget-8beb8dd4a8a569918d1d" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8beb8dd4a8a569918d1d">{"x":{"style":"bootstrap","filter":"none","data":[["1","2","3","4","5"],["São Caetano do Sul","Águas de São Pedro","Florianópolis","Balneário Camboriú","Vitória"],[" São Paulo"," São Paulo"," Santa Catarina"," Santa Catarina"," Espírito Santo"],["0,862","0,854","0,847","0,845","0,845"]],"container":"<table class=\"table table-striped table-hover\">\n  <thead>\n    <tr>\n      <th>#\n<\/th>\n      <th>Município\n<\/th>\n      <th>UF\n<\/th>\n      <th>IDHM (2010)[5]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","ordering":false,"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-47f042a010eeef15aee2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-47f042a010eeef15aee2">{"x":{"style":"bootstrap","filter":"none","data":[["1","2","3","4","5"],["São Caetano do Sul","Águas de São Pedro","Florianópolis","Balneário Camboriú","Vitória"],[" São Paulo"," São Paulo"," Santa Catarina"," Santa Catarina"," Espírito Santo"],["0,862","0,854","0,847","0,845","0,845"]],"container":"<table class=\"table table-striped table-hover\">\n  <thead>\n    <tr>\n      <th>#\n<\/th>\n      <th>Município\n<\/th>\n      <th>UF\n<\/th>\n      <th>IDHM (2010)[5]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","ordering":false,"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 ]  
 
 &lt;br&gt;
@@ -330,8 +363,8 @@ class: bg-main1 split-two
 ### `rvest`
 
 .center[
-<div id="htmlwidget-7d1f202ba800d3f2d788" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7d1f202ba800d3f2d788">{"x":{"style":"bootstrap","filter":"none","data":[[1,2,3,4,5],["São Caetano do Sul","Águas de São Pedro","Florianópolis","Balneário Camboriú","Vitória"],["São Paulo","São Paulo","Santa Catarina","Santa Catarina","Espírito Santo"],[0.862,0.854,0.847,0.845,0.845]],"container":"<table class=\"table table-striped table-hover\">\n  <thead>\n    <tr>\n      <th>#<\/th>\n      <th>Município<\/th>\n      <th>UF<\/th>\n      <th>IDHM (2010)[5]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","ordering":false,"columnDefs":[{"className":"dt-right","targets":[0,3]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-36860c9d8a1e641cade2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-36860c9d8a1e641cade2">{"x":{"style":"bootstrap","filter":"none","data":[[1,2,3,4,5],["São Caetano do Sul","Águas de São Pedro","Florianópolis","Balneário Camboriú","Vitória"],["São Paulo","São Paulo","Santa Catarina","Santa Catarina","Espírito Santo"],[0.862,0.854,0.847,0.845,0.845]],"container":"<table class=\"table table-striped table-hover\">\n  <thead>\n    <tr>\n      <th>#<\/th>\n      <th>Município<\/th>\n      <th>UF<\/th>\n      <th>IDHM (2010)[5]<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"dom":"t","ordering":false,"columnDefs":[{"className":"dt-right","targets":[0,3]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 ]
 
 ---
@@ -449,11 +482,11 @@ class: split-two
 ]]
 
 
-.column.bg-black.indigo[.content.vmiddle[
+.column.bg-black.white[.content.vmiddle.center[
+<i class="fas  fa-question fa-5x "></i>
 ]]
 
 ---
-
 
 class: split-two gray-row2-col1
 count: false
@@ -468,15 +501,88 @@ count: false
 ]]
 ]]
 
+.column.bg-black.indigo[.content.vmiddle[
+- <i class="fas  fa-globe "></i> Link para obtenção do token
+    - https://developer.twitter.com/en/apps
+- <i class="fas  fa-box "></i> Pacote R
+    - https://rtweet.info/
+]]
+
+
+---
+
+class: split-two gray-row1-col1
+count: false
+
+.column.bg-main1[
+.split-two[
+.row.bg-main1[.content.vmiddle.center[
+## Twitter <i class="fab  fa-twitter "></i>
+]]
+.row.bg-main2[.content.vmiddle.center[
+## Google <i class="fab  fa-google "></i>
+]]
+]]
 
 .column.bg-black.indigo[.content.vmiddle[
+- <i class="fas  fa-globe "></i> Link para obtenção do token
+    - https://developers.google.com/maps/documentation/geocoding/get-api-key
+- <i class="fas  fa-box "></i> Pacote R (Opcional)
+    - https://cran.rstudio.com/web/packages/mapsapi/vignettes/intro.html
+    - https://cran.r-project.org/web/packages/googleAuthR/index.html
 ]]
+
+---
+
+class: bg-main1 split-two
+
+## Exemplo: Twitter <i class="fab  fa-twitter "></i>
+
+.column[]
+.column[]
+
+---
+
+class: bg-main2 split-two
+
+## Exemplo: Google <i class="fab  fa-google "></i>
+### Geolocation API
+  
+.column[]
+.column[]
+
+---
+
+class: bg-main1 split-30 hide-slide-number
+
+.column.bg-main4[
+]
+.column.slide-in-right[
+.sliderbox.bg-main3.vmiddle[
+.font5[Concluindo]
+]]
+
+---
+
+class: bg-main1
+
+## Conclusçoes
+
+- Sempre que possível utilizar API's, por serem estáveis
+e bem documentadas;
+- Quando estiverem baixando dados de algum repositório
+público, verificar se as URL's não seguem um padrão
+lógico de modo que o processo posso ser automatizado pelo Rç
+- Web Scraping é uma boa alternativa apenas quando estas
+duas últimas opções não estão disponíveis.
 
 ---
 
 class: middle center inverse
   
-# Adeus
+# <i class="fas  fa-globe "></i> lcgodoy.github.io
+# <i class="fas  fa-envelope-open "></i> lucasdac.godoy@gmail.com
+# <i class="fab  fa-github "></i> github.com/lcgodoy
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({

@@ -248,6 +248,39 @@ class: bg-main1 split-30 hide-slide-number center middle
 
 ---
 
+class: bg-main1 middle
+
+.center[
+## HTML
+### *Hipertext Markup Language*
+]
+
+* Linguagem para estruturar conteúdos para navegadores da web;
+* Armazenada em arquivos de texto com o sufixo _html_.
+
+---
+
+class: bg-main1 middle
+
+## Elementos Comuns
+
+* **html** 
+    - Todo conteúdo da página faz parte deste elemento;
+* **head** 
+    - Contém os metadados do documento (Título, Scripts, etc);
+* **title** 
+    - Título do documento (mostrado acima da página e quando é marcada como favorito);
+* **body** 
+    - Tudo que não está no head deve ser incluído no body, se trata do conteúdo visível primário;
+* **h1, h2, h3, h4** 
+    - Títulos em diferentes níveis para a página;
+* **p** 
+    - *Um parágrafo*;
+* **ul, ol, li** 
+    - lista não ordenada, lista ordenada e especificação de elementos da lista, respectivamente;
+
+---
+
 class: bg-main1
 
 ## Utilizando o pacote `RSelenium`
@@ -442,11 +475,11 @@ class: split-two
 ]]
 
 
-.column.bg-black.indigo[.content.vmiddle[
+.column.bg-black.white[.content.vmiddle.center[
+`r icon::fa_question(size = 5)`
 ]]
 
 ---
-
 
 class: split-two gray-row2-col1
 count: false
@@ -461,12 +494,85 @@ count: false
 ]]
 ]]
 
+.column.bg-black.indigo[.content.vmiddle[
+- `r icon::fa_globe()` Link para obtenção do token
+    - https://developer.twitter.com/en/apps
+- `r icon::fa_box()` Pacote R
+    - https://rtweet.info/
+]]
+
+
+---
+
+class: split-two gray-row1-col1
+count: false
+
+.column.bg-main1[
+.split-two[
+.row.bg-main1[.content.vmiddle.center[
+## Twitter `r icon::fa_twitter()`
+]]
+.row.bg-main2[.content.vmiddle.center[
+## Google `r icon::fa_google()`
+]]
+]]
 
 .column.bg-black.indigo[.content.vmiddle[
+- `r icon::fa_globe()` Link para obtenção do token
+    - https://developers.google.com/maps/documentation/geocoding/get-api-key
+- `r icon::fa_box()` Pacote R (Opcional)
+    - https://cran.rstudio.com/web/packages/mapsapi/vignettes/intro.html
+    - https://cran.r-project.org/web/packages/googleAuthR/index.html
 ]]
+
+---
+
+class: bg-main1 split-two
+
+## Exemplo: Twitter `r icon::fa_twitter()`
+
+.column[]
+.column[]
+
+---
+
+class: bg-main2 split-two
+
+## Exemplo: Google `r icon::fa_google()`
+### Geolocation API
+  
+.column[]
+.column[]
+
+---
+
+class: bg-main1 split-30 hide-slide-number
+
+.column.bg-main4[
+]
+.column.slide-in-right[
+.sliderbox.bg-main3.vmiddle[
+.font5[Concluindo]
+]]
+
+---
+
+class: bg-main1
+
+## Conclusçoes
+
+- Sempre que possível utilizar API's, por serem estáveis
+e bem documentadas;
+- Quando estiverem baixando dados de algum repositório
+público, verificar se as URL's não seguem um padrão
+lógico de modo que o processo posso ser automatizado pelo Rç
+- Web Scraping é uma boa alternativa apenas quando estas
+duas últimas opções não estão disponíveis.
 
 ---
 
 class: middle center inverse
   
-# Adeus
+# `r icon::fa_globe()` lcgodoy.github.io
+# `r icon::fa_envelope_open()` lucasdac.godoy@gmail.com
+# `r icon::fa_github()` github.com/lcgodoy
