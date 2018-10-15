@@ -34,6 +34,7 @@ poa_element <- remDr$findElement(using = 'xpath', value = poa_xpath)
 poa_element$clickElement()
 
 botao <- remDr$findElement(using = 'xpath', value = '//*[@id="corpo"]/div/form/input[2]')
+botao$clickElement()
 
 #---- Utilizando rvest ----
 
@@ -45,4 +46,7 @@ secoes_eleitorais <- html %>%
             xpath = '//*[@id="corpo"]/div/table[1]') %>% 
   html_table() %>%
   `names<-`(x = ., value = .[1,]) %>% 
-  `[`(-1,) 
+  `[`(-1, ) 
+
+secoes_eleitorais %>% 
+  head()

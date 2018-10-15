@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "2F00B352",
-    "lastKnownWriteTime" : 1539575621,
-    "last_content_update" : 1539575621227,
+    "lastKnownWriteTime" : 1539614567,
+    "last_content_update" : 1539614567756,
     "path" : "~/Documents/github/datathon/scripts/03-secoes.R",
     "project_path" : "scripts/03-secoes.R",
     "properties" : {
-        "cursorPosition" : "48,0",
-        "scrollLine" : "0",
+        "cursorPosition" : "50,22",
+        "scrollLine" : "23",
         "tempName" : "Untitled1"
     },
     "relative_order" : 6,

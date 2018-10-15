@@ -43,7 +43,7 @@ class: bg-main1 split-30 hide-slide-number
 ]
 .column.slide-in-right[
 .sliderbox.bg-main2.vmiddle[
-.font5[Definições]
+.font5[Intro  ]
 ]]
 
 ---
@@ -65,7 +65,7 @@ class: split-two
 
 
 .column.bg-black.indigo[.content.vmiddle.center[
-### Definição
+### Características
 <br>
 
 ### Pacotes
@@ -97,15 +97,11 @@ count: false
 
 .column.bg-black.indigo[.content.vmiddle[
 
-### Definição
+### Características
 
 - Extração de dados de páginas web
 
 - HTTP ou Navegador Web
-
-- Pode ser feito automaticamente. Contudo, tipicamente, consiste em alguma 
-automatização para extrair um volume de dados que seria muito demorado de
-ser extraído manualmente.
 
 ### Pacotes
 
@@ -120,9 +116,7 @@ ser extraído manualmente.
 - Dados não divulgados via API e Web Service
 
 - SINAM, Wikipédia, etc.
-
 ]]
-
 
 ---
 
@@ -145,7 +139,7 @@ count: false
 
 .column.bg-black.indigo[.content.vmiddle[
 
-### Definição
+### Características
 
 - Bases de dados disponíveis na web
 
@@ -163,9 +157,8 @@ retornados em forma de json.
 de acordo com os parâmetros solicitados.
 
 - Exemplos:
-* Portal da Transparência;
-* IBGE
-
+    * Portal da Transparência;
+    * IBGE
 ]]
 
 
@@ -189,7 +182,7 @@ count: false
 
 
 .column.bg-black.indigo[.content.vmiddle[
-### Definição
+### Características
 
 - Application Programming Interface
 
@@ -210,7 +203,6 @@ do pacote `jsonlite`
 - Sempre que disponível.
 
 ]]
-
 
 ---
 
